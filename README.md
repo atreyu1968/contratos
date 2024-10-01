@@ -51,7 +51,7 @@ Un juego interactivo para aprender y repasar los diferentes tipos de contratos d
 
 El juego está alojado en GitHub Pages y se puede jugar directamente desde el navegador sin necesidad de instalación:
 
-- [Jugar ahora](https://atreyo1968.github.io/contratos2)
+- [Jugar ahora](https://atreyu1968.github.io/contratos2)
 
 ### **Ejecutar Localmente**
 
