@@ -280,7 +280,409 @@ const scenarios = [
         hint: "Considera las consecuencias legales del uso indebido de contratos temporales."
     }
 ];
+  // Escenario 21
+    {
+        title: "Escenario 21",
+        description: "Una empresa de publicidad ha ganado un contrato para una campaña que durará nueve meses. Necesita personal creativo adicional durante este periodo. ¿Qué tipo de contrato es más apropiado?",
+        options: [
+            { text: "Contrato temporal estructural", correct: true },
+            { text: "Contrato indefinido", correct: false },
+            { text: "Contrato de interinidad", correct: false },
+            { text: "Contrato formativo", correct: false }
+        ],
+        feedback: "El Contrato temporal estructural es adecuado para proyectos con duración determinada como una campaña específica.",
+        hint: "Busca un contrato temporal para proyectos específicos."
+    },
+    // Escenario 22
+    {
+        title: "Escenario 22",
+        description: "Una universidad quiere contratar a un investigador postdoctoral por dos años para un proyecto financiado externamente. ¿Qué tipo de contrato deberían utilizar?",
+        options: [
+            { text: "Contrato temporal por obra o servicio determinado", correct: false },
+            { text: "Contrato temporal estructural", correct: true },
+            { text: "Contrato indefinido", correct: false },
+            { text: "Contrato formativo en alternancia", correct: false }
+        ],
+        feedback: "El Contrato temporal estructural es adecuado para proyectos de investigación con financiación y duración determinadas.",
+        hint: "Considera contratos temporales para proyectos de investigación."
+    },
+    // Escenario 23
+    {
+        title: "Escenario 23",
+        description: "Una empresa quiere incentivar la contratación de personas con discapacidad. ¿Qué tipo de contrato puede ofrecer para fomentar su inclusión laboral?",
+        options: [
+            { text: "Contrato indefinido para personas con discapacidad", correct: true },
+            { text: "Contrato temporal", correct: false },
+            { text: "Contrato de interinidad", correct: false },
+            { text: "Contrato formativo", correct: false }
+        ],
+        feedback: "El Contrato indefinido para personas con discapacidad ofrece beneficios para la empresa y estabilidad para el trabajador.",
+        hint: "Busca contratos que promuevan la inclusión de colectivos específicos."
+    },
+    // Escenario 24
+    {
+        title: "Escenario 24",
+        description: "Un empleado solicita reducir su jornada para cuidar de un familiar enfermo. ¿Qué tipo de modificación contractual se debe realizar?",
+        options: [
+            { text: "Pacto de reducción de jornada por guarda legal", correct: true },
+            { text: "Contrato a tiempo parcial", correct: false },
+            { text: "Contrato temporal", correct: false },
+            { text: "Contrato de relevo", correct: false }
+        ],
+        feedback: "La reducción de jornada por guarda legal permite al trabajador ajustar su horario para cuidados familiares.",
+        hint: "Piensa en derechos laborales relacionados con la conciliación familiar."
+    },
+    // Escenario 25
+    {
+        title: "Escenario 25",
+        description: "Una empresa necesita contratar a un trabajador desempleado de larga duración y desea aprovechar incentivos fiscales. ¿Qué contrato debería utilizar?",
+        options: [
+            { text: "Contrato indefinido de apoyo a los emprendedores", correct: true },
+            { text: "Contrato temporal", correct: false },
+            { text: "Contrato formativo", correct: false },
+            { text: "Contrato a tiempo parcial", correct: false }
+        ],
+        feedback: "El Contrato indefinido de apoyo a los emprendedores ofrece incentivos para contratar a desempleados de larga duración.",
+        hint: "Busca contratos con incentivos para contratar a personas desempleadas."
+    },
+    // Escenario 26
+    {
+        title: "Escenario 26",
+        description: "Un trabajador se jubila parcialmente y la empresa necesita cubrir el resto de su jornada. ¿Qué tipo de contrato deben realizar?",
+        options: [
+            { text: "Contrato de relevo", correct: true },
+            { text: "Contrato temporal", correct: false },
+            { text: "Contrato indefinido", correct: false },
+            { text: "Contrato formativo", correct: false }
+        ],
+        feedback: "El Contrato de relevo es adecuado para sustituir la jornada dejada vacante por un trabajador en jubilación parcial.",
+        hint: "Piensa en contratos diseñados para situaciones de jubilación parcial."
+    },
+    // Escenario 27
+    {
+        title: "Escenario 27",
+        description: "Una empresa del sector tecnológico quiere contratar a un experto extranjero de alta cualificación. ¿Qué tipo de permiso y contrato necesitan?",
+        options: [
+            { text: "Permiso de trabajo y Contrato indefinido", correct: true },
+            { text: "No necesita permiso y Contrato temporal", correct: false },
+            { text: "Permiso de estudiante y Contrato formativo", correct: false },
+            { text: "Permiso de turista y Contrato a tiempo parcial", correct: false }
+        ],
+        feedback: "Se requiere un permiso de trabajo y un Contrato indefinido o de alta dirección para expertos extranjeros.",
+        hint: "Considera los requisitos para contratar a profesionales extranjeros cualificados."
+    },
+    // Escenario 28
+    {
+        title: "Escenario 28",
+        description: "Una empresa quiere formar a un empleado en una nueva tecnología mientras trabaja. ¿Qué contrato es más adecuado?",
+        options: [
+            { text: "Contrato formativo para la obtención de práctica profesional", correct: false },
+            { text: "Contrato formativo en alternancia", correct: true },
+            { text: "Contrato temporal", correct: false },
+            { text: "Contrato indefinido", correct: false }
+        ],
+        feedback: "El Contrato formativo en alternancia permite combinar trabajo remunerado con formación teórica y práctica.",
+        hint: "Busca contratos que permitan formación y trabajo simultáneamente."
+    },
+    // Escenario 29
+    {
+        title: "Escenario 29",
+        description: "Un trabajador ha estado encadenando contratos temporales en la misma empresa por más de 24 meses en un periodo de 30 meses. ¿Qué ocurre legalmente?",
+        options: [
+            { text: "Su contrato se convierte en indefinido", correct: true },
+            { text: "Continúa como temporal", correct: false },
+            { text: "Debe ser despedido", correct: false },
+            { text: "No ocurre nada mientras firme nuevos contratos", correct: false }
+        ],
+        feedback: "La ley establece que tras cierto tiempo encadenando contratos temporales, el trabajador adquiere la condición de indefinido.",
+        hint: "Considera las limitaciones legales al encadenamiento de contratos temporales."
+    },
+    // Escenario 30
+    {
+        title: "Escenario 30",
+        description: "Una empresa agrícola necesita trabajadores para una cosecha puntual debido a un pedido excepcional. ¿Qué tipo de contrato debe utilizar?",
+        options: [
+            { text: "Contrato temporal por circunstancias imprevisibles de la producción", correct: true },
+            { text: "Contrato fijo-discontinuo", correct: false },
+            { text: "Contrato indefinido", correct: false },
+            { text: "Contrato de interinidad", correct: false }
+        ],
+        feedback: "El Contrato temporal por circunstancias imprevisibles es adecuado para incrementos ocasionales y no previstos de actividad.",
+        hint: "Piensa en contratos para necesidades temporales inesperadas."
+    },
+    // Escenario 31
+    {
+        title: "Escenario 31",
+        description: "Una empresa quiere contratar a un trabajador a distancia de forma permanente. ¿Qué tipo de contrato y qué condiciones deben considerar?",
+        options: [
+            { text: "Contrato indefinido con acuerdo de trabajo a distancia", correct: true },
+            { text: "Contrato temporal por obra o servicio", correct: false },
+            { text: "Contrato a tiempo parcial", correct: false },
+            { text: "Contrato formativo", correct: false }
+        ],
+        feedback: "Se debe realizar un Contrato indefinido y establecer un acuerdo de trabajo a distancia según la normativa vigente.",
+        hint: "Considera la normativa sobre teletrabajo y contratos permanentes."
+    },
+    // Escenario 32
+    {
+        title: "Escenario 32",
+        description: "Una empresa contrata a un menor de 18 años que no ha finalizado la educación obligatoria. ¿Qué contrato puede ofrecerle?",
+        options: [
+            { text: "Contrato formativo en alternancia", correct: true },
+            { text: "Contrato temporal", correct: false },
+            { text: "Contrato indefinido", correct: false },
+            { text: "No puede contratarlo legalmente", correct: false }
+        ],
+        feedback: "El Contrato formativo en alternancia es adecuado para menores que pueden trabajar mientras completan su formación.",
+        hint: "Busca contratos que permitan trabajar y estudiar simultáneamente para menores."
+    },
+    // Escenario 33
+    {
+        title: "Escenario 33",
+        description: "Una empresa desea contratar a un trabajador para sustituir a otro que va a realizar formación interna durante dos meses. ¿Qué tipo de contrato debe utilizar?",
+        options: [
+            { text: "Contrato de interinidad por sustitución", correct: true },
+            { text: "Contrato temporal", correct: false },
+            { text: "Contrato formativo", correct: false },
+            { text: "Contrato a tiempo parcial", correct: false }
+        ],
+        feedback: "El Contrato de interinidad por sustitución es adecuado para cubrir temporalmente el puesto de un trabajador en formación.",
+        hint: "Piensa en contratos para sustituir temporalmente a empleados ausentes."
+    },
+    // Escenario 34
+    {
+        title: "Escenario 34",
+        description: "Una empresa tiene picos de producción previsibles cada fin de mes. ¿Qué contrato es más adecuado para contratar personal en esos periodos?",
+        options: [
+            { text: "Contrato temporal por circunstancias previsibles de la producción", correct: true },
+            { text: "Contrato fijo-discontinuo", correct: false },
+            { text: "Contrato indefinido", correct: false },
+            { text: "Contrato formativo", correct: false }
+        ],
+        feedback: "El Contrato temporal por circunstancias previsibles es ideal para atender incrementos periódicos y programados de actividad.",
+        hint: "Considera contratos para aumentos de trabajo que se pueden anticipar."
+    },
+    // Escenario 35
+    {
+        title: "Escenario 35",
+        description: "Un trabajador con contrato temporal ha sufrido un accidente laboral y estará de baja por un mes. ¿Qué puede hacer la empresa respecto a su contrato?",
+        options: [
+            { text: "Mantener el contrato y contratar a otro con contrato de interinidad", correct: true },
+            { text: "Rescindir el contrato temporal", correct: false },
+            { text: "Convertir su contrato en indefinido", correct: false },
+            { text: "No puede hacer nada hasta que regrese", correct: false }
+        ],
+        feedback: "La empresa puede contratar a un sustituto mediante un Contrato de interinidad mientras el trabajador está de baja.",
+        hint: "Piensa en opciones legales para cubrir una baja temporal."
+    },
+    // Escenario 36
+    {
+        title: "Escenario 36",
+        description: "Una empresa quiere contratar a un estudiante para prácticas no laborales. ¿Qué tipo de convenio o contrato debe establecer?",
+        options: [
+            { text: "Convenio de prácticas con centro educativo", correct: true },
+            { text: "Contrato formativo en alternancia", correct: false },
+            { text: "Contrato temporal", correct: false },
+            { text: "Contrato a tiempo parcial", correct: false }
+        ],
+        feedback: "Las prácticas no laborales se regulan mediante convenios entre la empresa y el centro educativo, no mediante contratos laborales.",
+        hint: "Considera acuerdos educativos para prácticas no remuneradas."
+    },
+    // Escenario 37
+    {
+        title: "Escenario 37",
+        description: "Una empresa necesita personal para cubrir un exceso de pedidos debido a una situación excepcional no previsible. ¿Qué contrato debe utilizar?",
+        options: [
+            { text: "Contrato temporal por circunstancias imprevisibles de la producción", correct: true },
+            { text: "Contrato indefinido", correct: false },
+            { text: "Contrato fijo-discontinuo", correct: false },
+            { text: "Contrato formativo", correct: false }
+        ],
+        feedback: "El Contrato temporal por circunstancias imprevisibles es adecuado para atender necesidades temporales excepcionales.",
+        hint: "Piensa en contratos para situaciones excepcionales y no previstas."
+    },
+    // Escenario 38
+    {
+        title: "Escenario 38",
+        description: "Un empleado solicita una excedencia voluntaria por motivos personales durante un año. ¿Qué debe hacer la empresa si quiere cubrir su puesto mientras tanto?",
+        options: [
+            { text: "Realizar un Contrato de interinidad por sustitución", correct: true },
+            { text: "Contratar temporalmente a alguien", correct: false },
+            { text: "No puede cubrir el puesto", correct: false },
+            { text: "Despedir al empleado en excedencia", correct: false }
+        ],
+        feedback: "El Contrato de interinidad por sustitución permite cubrir el puesto de un trabajador en excedencia con reserva de puesto.",
+        hint: "Considera contratos para sustituir a empleados con derecho a reincorporación."
+    },
+    // Escenario 39
+    {
+        title: "Escenario 39",
+        description: "Una empresa quiere contratar a un grupo de trabajadores para una campaña específica que dura tres semanas. ¿Qué tipo de contrato debe utilizar?",
+        options: [
+            { text: "Contrato temporal de muy corta duración", correct: true },
+            { text: "Contrato indefinido", correct: false },
+            { text: "Contrato de interinidad", correct: false },
+            { text: "Contrato formativo", correct: false }
+        ],
+        feedback: "El Contrato temporal de muy corta duración es adecuado para trabajos esporádicos de menos de cuatro semanas.",
+        hint: "Busca contratos diseñados para periodos muy breves de trabajo."
+    },
+    // Escenario 40
+    {
+        title: "Escenario 40",
+        description: "Una empresa ha decidido externalizar un servicio y contratar a un autónomo para realizarlo. ¿Qué tipo de relación contractual deben establecer?",
+        options: [
+            { text: "Contrato de arrendamiento de servicios con un autónomo", correct: true },
+            { text: "Contrato laboral temporal", correct: false },
+            { text: "Contrato indefinido", correct: false },
+            { text: "No es necesario ningún contrato", correct: false }
+        ],
+        feedback: "Al contratar a un autónomo, se establece un contrato mercantil de arrendamiento de servicios, no un contrato laboral.",
+        hint: "Considera la diferencia entre contratos laborales y mercantiles."
+    }
+];
 
+let currentScenario = 0;
+let score = 0;
+let timer;
+let timeLeft = 30;
+let mode = 'practica';
+
+function startGame(selectedMode) {
+    mode = selectedMode;
+    document.getElementById('mode-selection').style.display = 'none';
+    document.getElementById('game-container').style.display = 'block';
+    shuffle(scenarios);
+    loadScenario(currentScenario);
+}
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function loadScenario(index) {
+    const scenario = scenarios[index];
+    document.getElementById('scenario-title').innerText = scenario.title;
+    document.getElementById('scenario-description').innerText = scenario.description;
+
+    const optionsList = document.getElementById('options-list');
+    optionsList.innerHTML = '';
+
+    scenario.options.forEach((option, i) => {
+        const li = document.createElement('li');
+        const button = document.createElement('button');
+        button.innerText = option.text;
+        button.onclick = () => selectOption(option.correct, scenario.feedback);
+        li.appendChild(button);
+        optionsList.appendChild(li);
+    });
+
+    document.getElementById('feedback').innerText = '';
+    document.getElementById('next-button').style.display = 'none';
+    document.getElementById('hint-button').disabled = false;
+    document.getElementById('hint-button').style.display = mode === 'practica' ? 'inline-block' : 'none';
+
+    if (mode === 'examen') {
+        startTimer();
+    } else {
+        document.getElementById('timer').style.display = 'none';
+    }
+}
+
+function startTimer() {
+    timeLeft = 30;
+    document.getElementById('timer').innerText = 'Tiempo restante: ' + timeLeft + 's';
+    document.getElementById('timer').style.display = 'block';
+    timer = setInterval(function() {
+        timeLeft--;
+        document.getElementById('timer').innerText = 'Tiempo restante: ' + timeLeft + 's';
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            document.getElementById('feedback').innerText = 'Tiempo agotado.';
+            document.getElementById('next-button').style.display = 'block';
+            disableOptions();
+        }
+    }, 1000);
+}
+
+function selectOption(isCorrect, feedback) {
+    if (mode === 'examen') {
+        clearInterval(timer);
+    }
+
+    if (isCorrect) {
+        score++;
+        document.getElementById('feedback').innerText = '¡Correcto! ' + feedback;
+        document.getElementById('feedback').classList.add('correct-answer');
+        document.getElementById('correct-sound').play();
+    } else {
+        document.getElementById('feedback').innerText = 'Incorrecto. ' + feedback;
+        document.getElementById('feedback').classList.add('incorrect-answer');
+        document.getElementById('incorrect-sound').play();
+    }
+    document.getElementById('score').innerText = 'Puntuación: ' + score;
+    document.getElementById('next-button').style.display = 'block';
+
+    disableOptions();
+}
+
+function disableOptions() {
+    const buttons = document.querySelectorAll('#options-list button');
+    buttons.forEach(button => button.disabled = true);
+}
+
+function nextScenario() {
+    currentScenario++;
+    if (currentScenario < scenarios.length) {
+        document.getElementById('feedback').classList.remove('correct-answer', 'incorrect-answer');
+        loadScenario(currentScenario);
+    } else {
+        document.getElementById('game-container').style.display = 'none';
+        document.getElementById('end-game').style.display = 'block';
+        document.getElementById('final-score').innerText = score + '/' + scenarios.length;
+        showLeaderboard();
+    }
+}
+
+function saveScore() {
+    const name = document.getElementById('player-name').value;
+    if (name) {
+        const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+        leaderboard.push({ name: name, score: score });
+        leaderboard.sort((a, b) => b.score - a.score);
+        localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+        showLeaderboard();
+        document.getElementById('player-name').value = '';
+    }
+}
+
+function showLeaderboard() {
+    const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+    const leaderboardElement = document.getElementById('leaderboard');
+    leaderboardElement.innerHTML = '';
+    leaderboard.forEach(entry => {
+        const li = document.createElement('li');
+        li.innerText = `${entry.name}: ${entry.score}`;
+        leaderboardElement.appendChild(li);
+    });
+}
+
+function showHint() {
+    const scenario = scenarios[currentScenario];
+    if (scenario.hint) {
+        document.getElementById('feedback').innerText = 'Pista: ' + scenario.hint;
+        document.getElementById('hint-button').disabled = true;
+    }
+}
+
+// Iniciar el juego al seleccionar el modo
+// window.onload = () => {
+//     startGame('practica');
+// };
 // Variables globales
 let currentScenario = 0;
 let score = 0;
