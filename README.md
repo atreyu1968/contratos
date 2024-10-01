@@ -1,4 +1,4 @@
-# **El Desafío de los Contratos**
+lo# **El Desafío de los Contratos**
 
 Un juego interactivo para aprender y repasar los diferentes tipos de contratos de trabajo en España tras la última Reforma Laboral.
 
@@ -51,7 +51,7 @@ Un juego interactivo para aprender y repasar los diferentes tipos de contratos d
 
 El juego está alojado en GitHub Pages y se puede jugar directamente desde el navegador sin necesidad de instalación:
 
-- [Jugar ahora](https://tu_usuario.github.io/contratos-interactivo/)
+- [Jugar ahora](https://atreyo1968.github.io/contratos2)
 
 ### **Ejecutar Localmente**
 
